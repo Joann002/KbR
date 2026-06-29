@@ -1,0 +1,85 @@
+[
+  {
+    "id": "kab-001",
+    "titre": "Kabary fanambadiana — demande de la mariée",
+    "occasion": "Fanambadiana",
+    "region": "Imerina",
+    "dureeMinutes": 15,
+    "niveau": "Intermédiaire",
+    "ohabolanaIds": ["oha-001", "oha-005", "oha-010"],
+    "sections": [
+      {
+        "titre": "Fiarahana (Salutation)",
+        "contenuMg": "Tompokolahy sy tompokovavy, arahaba tratry ny andro. Misaotra anareo tonga maro fa ny fihavanana no nentinay teto.",
+        "traductionFr": "Mesdames et messieurs, bonjour à tous. Merci d'être venus nombreux, car c'est la solidarité qui nous a réunis ici."
+      },
+      {
+        "titre": "Fampidirana (Introduction)",
+        "contenuMg": "Tonga izahay anio hangataka, fa ny fihavanana no tsy mba azo vidina vola.",
+        "traductionFr": "Nous venons aujourd'hui faire une demande, car la solidarité ne s'achète pas avec de l'argent."
+      },
+      {
+        "titre": "Vohitra (Corps du discours)",
+        "contenuMg": "Indreto izahay mpaka voninkazo, fa ny hazo no vanon-ko lakana, ny tany naniriany no tsara.",
+        "traductionFr": "Nous voici venus cueillir une fleur, car si l'arbre devient une belle pirogue, c'est que la terre qui l'a nourri était bonne."
+      },
+      {
+        "titre": "Farany (Conclusion)",
+        "contenuMg": "Koa enga anie ka hotahian'Andriamanitra ity fanambadiana ity. Misaotra tompokolahy sy tompokovavy.",
+        "traductionFr": "Puisse Dieu bénir cette union. Merci à toutes et à tous."
+      }
+    ]
+  },
+  {
+    "id": "kab-002",
+    "titre": "Kabary fisaorana — remerciements",
+    "occasion": "Fisaorana",
+    "region": "Betsileo",
+    "dureeMinutes": 8,
+    "niveau": "Débutant",
+    "ohabolanaIds": ["oha-007", "oha-002"],
+    "sections": [
+      {
+        "titre": "Fiarahana (Salutation)",
+        "contenuMg": "Arahaba tompokolahy sy tompokovavy rehetra. Faly izahay mahita anareo eto.",
+        "traductionFr": "Bonjour à toutes et à tous. Nous sommes heureux de vous voir ici."
+      },
+      {
+        "titre": "Vohitra (Corps du discours)",
+        "contenuMg": "Misaotra anareo izahay, fa fihavanana mihoatra ny harena no nasehonareo.",
+        "traductionFr": "Nous vous remercions, car vous avez montré que la solidarité vaut plus que la richesse."
+      },
+      {
+        "titre": "Farany (Conclusion)",
+        "contenuMg": "Ho ela velona anie isika rehetra. Misaotra indrindra.",
+        "traductionFr": "Puissions-nous tous vivre longtemps. Merci infiniment."
+      }
+    ]
+  },
+  {
+    "id": "kab-003",
+    "titre": "Kabary fihaonana — réunion communautaire",
+    "occasion": "Fihaonana",
+    "region": "Imerina",
+    "dureeMinutes": 12,
+    "niveau": "Intermédiaire",
+    "ohabolanaIds": ["oha-002", "oha-009"],
+    "sections": [
+      {
+        "titre": "Fiarahana (Salutation)",
+        "contenuMg": "Tompokolahy sy tompokovavy, samia tratran'izao fotoana izao.",
+        "traductionFr": "Mesdames et messieurs, soyez tous les bienvenus en ce jour."
+      },
+      {
+        "titre": "Fampidirana (Introduction)",
+        "contenuMg": "Tonga isika hifampidinika, fa ny teny ierana tsy mba diso.",
+        "traductionFr": "Nous sommes réunis pour délibérer, car la parole concertée ne se trompe pas."
+      },
+      {
+        "titre": "Farany (Conclusion)",
+        "contenuMg": "Aoka isika hiray hina, fa ny voky tsy mahaleo ny noana.",
+        "traductionFr": "Soyons unis, car le rassasié ne comprend pas l'affamé."
+      }
+    ]
+  }
+]

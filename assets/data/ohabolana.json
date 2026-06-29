@@ -1,0 +1,110 @@
+[
+  {
+    "id": "oha-001",
+    "texteMg": "Ny fihavanana no tsy mba azo vidina vola.",
+    "translitteration": "ni fi-ha-VA-na-na nu tsi ba a-zu VI-di-na VU-la",
+    "traductionFr": "La solidarité (fihavanana) ne s'achète pas avec de l'argent.",
+    "signification": "La valeur des liens humains dépasse toute richesse matérielle.",
+    "themes": ["fihavanana", "communauté", "sagesse"],
+    "usage": "Ouverture d'un kabary de mariage ou de réconciliation."
+  },
+  {
+    "id": "oha-002",
+    "texteMg": "Ny teny ierana tsy mba diso.",
+    "translitteration": "ni TE-ni i-e-RA-na tsi ba DI-su",
+    "traductionFr": "La parole concertée ne se trompe pas.",
+    "signification": "Les décisions prises en commun sont les plus justes.",
+    "themes": ["communauté", "sagesse", "respect"],
+    "usage": "Dans un kabary de réunion communautaire (fihaonana)."
+  },
+  {
+    "id": "oha-003",
+    "texteMg": "Ny marina tsy mba maty.",
+    "translitteration": "ni MA-ri-na tsi ba MA-ti",
+    "traductionFr": "La vérité ne meurt jamais.",
+    "signification": "La vérité finit toujours par triompher avec le temps.",
+    "themes": ["sagesse", "vérité"],
+    "usage": "Pour appuyer un argument moral dans le corps du discours."
+  },
+  {
+    "id": "oha-004",
+    "texteMg": "Izay mahay miteny mahay mandresy.",
+    "translitteration": "i-zai ma-HAI mi-TE-ni ma-HAI man-DRE-si",
+    "traductionFr": "Qui sait parler sait vaincre.",
+    "signification": "La maîtrise de la parole est une force décisive.",
+    "themes": ["parole", "sagesse"],
+    "usage": "Introduction d'un kabary mettant en valeur l'art oratoire."
+  },
+  {
+    "id": "oha-005",
+    "texteMg": "Ny hazo no vanon-ko lakana, ny tany naniriany no tsara.",
+    "translitteration": "ni HA-zu nu va-non-ku la-KA-na, ni TA-ni na-ni-RI-an nu TSA-ra",
+    "traductionFr": "Si l'arbre devient une belle pirogue, c'est que la terre qui l'a nourri était bonne.",
+    "signification": "La réussite d'une personne reflète son éducation et son entourage.",
+    "themes": ["famille", "nature", "éducation"],
+    "usage": "Éloge des parents dans un kabary de mariage."
+  },
+  {
+    "id": "oha-006",
+    "texteMg": "Ny atao no miverina, ny natao no mody.",
+    "translitteration": "ni a-TAU nu mi-ve-RI-na, ni na-TAU nu MU-di",
+    "traductionFr": "Ce que l'on fait revient, ce que l'on a fait retourne (à soi).",
+    "signification": "Toute action a des conséquences qui reviennent à son auteur.",
+    "themes": ["sagesse", "morale"],
+    "usage": "Avertissement moral dans le corps d'un kabary."
+  },
+  {
+    "id": "oha-007",
+    "texteMg": "Fihavanana mihoatra ny harena.",
+    "translitteration": "fi-ha-VA-na-na mi-HU-tra ni ha-RE-na",
+    "traductionFr": "La solidarité vaut plus que la richesse.",
+    "signification": "Les liens humains priment sur les biens matériels.",
+    "themes": ["fihavanana", "communauté"],
+    "usage": "Conclusion d'un kabary appelant à l'unité."
+  },
+  {
+    "id": "oha-008",
+    "texteMg": "Aleo maty rahampitso toy izay maty androany.",
+    "translitteration": "a-LE-u MA-ti ra-ham-PI-tsu tui i-zai MA-ti an-DRU-a-ni",
+    "traductionFr": "Mieux vaut mourir demain qu'aujourd'hui.",
+    "signification": "Il faut préférer la patience et l'espoir à la précipitation.",
+    "themes": ["sagesse", "patience"],
+    "usage": "Pour inviter à la prudence dans une négociation."
+  },
+  {
+    "id": "oha-009",
+    "texteMg": "Ny voky tsy mahaleo ny noana.",
+    "translitteration": "ni VU-ki tsi ma-ha-LE-u ni NU-a-na",
+    "traductionFr": "Le rassasié ne comprend pas l'affamé.",
+    "signification": "On ne ressent pas la souffrance que l'on ne vit pas soi-même.",
+    "themes": ["sagesse", "empathie", "communauté"],
+    "usage": "Appel à la solidarité envers les plus démunis."
+  },
+  {
+    "id": "oha-010",
+    "texteMg": "Ny fitiavana tsy mahalala fahasahiranana.",
+    "translitteration": "ni fi-ti-A-va-na tsi ma-ha-LA-la fa-ha-sa-hi-RA-na-na",
+    "traductionFr": "L'amour ne connaît pas la peine.",
+    "signification": "Quand on aime, aucun effort ne paraît pénible.",
+    "themes": ["amour", "famille"],
+    "usage": "Éloge des mariés dans un kabary de mariage."
+  },
+  {
+    "id": "oha-011",
+    "texteMg": "Tsy misy mahalala ny ho avy.",
+    "translitteration": "tsi MI-si ma-ha-LA-la ni hu A-vi",
+    "traductionFr": "Nul ne connaît l'avenir.",
+    "signification": "L'humilité s'impose face à l'incertitude de la vie.",
+    "themes": ["sagesse", "humilité"],
+    "usage": "Transition vers les vœux dans un kabary."
+  },
+  {
+    "id": "oha-012",
+    "texteMg": "Ny teny malefaka mandresy ny mafy.",
+    "translitteration": "ni TE-ni ma-LE-fa-ka man-DRE-si ni MA-fi",
+    "traductionFr": "La parole douce vainc la dureté.",
+    "signification": "La douceur et la diplomatie sont plus efficaces que la force.",
+    "themes": ["parole", "respect", "sagesse"],
+    "usage": "Ouverture conciliante d'un kabary de demande (fangatahana)."
+  }
+]
