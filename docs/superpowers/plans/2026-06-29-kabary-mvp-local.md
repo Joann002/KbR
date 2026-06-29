@@ -1644,7 +1644,15 @@ import 'package:go_router/go_router.dart';
 import '../data/kabary_repository.dart';
 
 /// État du filtre d'occasion sélectionné (null = toutes).
-final occasionFiltreProvider = StateProvider<String?>((ref) => null);
+/// Riverpod 3.x : on utilise un Notifier (StateProvider est déprécié).
+class OccasionFiltre extends Notifier<String?> {
+  @override
+  String? build() => null;
+  void set(String? occasion) => state = occasion;
+}
+
+final occasionFiltreProvider =
+    NotifierProvider<OccasionFiltre, String?>(OccasionFiltre.new);
 
 class BibliothequePage extends ConsumerWidget {
   const BibliothequePage({super.key});
@@ -1680,7 +1688,7 @@ class BibliothequePage extends ConsumerWidget {
                   label: const Text('Toutes'),
                   selected: occasion == null,
                   onSelected: (_) =>
-                      ref.read(occasionFiltreProvider.notifier).state = null,
+                      ref.read(occasionFiltreProvider.notifier).set(null),
                 ),
               ),
               ...occasions.map(
@@ -1690,7 +1698,7 @@ class BibliothequePage extends ConsumerWidget {
                     label: Text(o),
                     selected: occasion == o,
                     onSelected: (_) =>
-                        ref.read(occasionFiltreProvider.notifier).state = o,
+                        ref.read(occasionFiltreProvider.notifier).set(o),
                   ),
                 ),
               ),
@@ -1856,7 +1864,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../data/ohabolana_repository.dart';
 
-final rechercheProvider = StateProvider<String>((ref) => '');
+/// Texte de recherche courant. Riverpod 3.x : Notifier (StateProvider déprécié).
+class Recherche extends Notifier<String> {
+  @override
+  String build() => '';
+  void set(String query) => state = query;
+}
+
+final rechercheProvider =
+    NotifierProvider<Recherche, String>(Recherche.new);
 
 class OhabolanaPage extends ConsumerWidget {
   const OhabolanaPage({super.key});
@@ -1877,7 +1893,7 @@ class OhabolanaPage extends ConsumerWidget {
               border: OutlineInputBorder(),
             ),
             onChanged: (v) =>
-                ref.read(rechercheProvider.notifier).state = v,
+                ref.read(rechercheProvider.notifier).set(v),
           ),
         ),
         Expanded(
