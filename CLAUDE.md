@@ -1,7 +1,24 @@
 # CLAUDE.md — Kabary
 
 > Application mobile Flutter dédiée à la préservation, l'enseignement et la valorisation de l'art oratoire malgache (**kabary**).
-> Référence complète : [plan_conception_kabary_app.md](plan_conception_kabary_app.md)
+> Vision long terme : [plan_conception_kabary_app.md](plan_conception_kabary_app.md). Le reste de ce fichier décrit cette vision cible ; l'**état réel actuel** est résumé juste en dessous.
+
+## État actuel (MVP livré)
+
+Le premier livrable est un **APK Flutter 100 % local**, qui diverge volontairement de la stack cible du plan (à réintroduire plus tard) :
+
+- **Pas de Firebase / pas d'auth / pas d'utilisateur** — tout est local (Hive), seedé au 1er lancement depuis des JSON embarqués (`assets/data/`).
+- **Pas de génération de code** — `toJson`/`fromJson` manuels, providers Riverpod manuels (pas de `riverpod_generator`/`json_serializable`/`hive_generator`).
+- **Riverpod 3.x** — utiliser `Notifier`/`NotifierProvider` (le `StateProvider` est déprécié).
+- **Modules présents** : Accueil (proverbe du jour + kabary récents), Bibliothèque (liste filtrable par occasion + détail avec favori/partage/proverbes liés), Ohabolana (recherche + détail), Favoris (locaux, deux listes Hive). Bottom nav à 4 onglets via `go_router` ShellRoute.
+- **Dépendances effectives** : flutter_riverpod 3.x, hive/hive_flutter, go_router, google_fonts, share_plus 11.x (`SharePlus.instance.share(ShareParams(...))`), uuid.
+- Architecture en couches légère par feature : `features/<x>/{data,presentation}` + `core/{theme,router,data,widgets}`.
+- Spec : [docs/superpowers/specs/2026-06-29-kabary-mvp-local-design.md](docs/superpowers/specs/2026-06-29-kabary-mvp-local-design.md) · Plan : [docs/superpowers/plans/2026-06-29-kabary-mvp-local.md](docs/superpowers/plans/2026-06-29-kabary-mvp-local.md).
+- Binaire Flutter : `/home/happy/flutter/bin/flutter` (Flutter 3.38 / Dart 3.10). Tests : `flutter test`. APK : `flutter build apk`.
+
+La section ci-dessous décrit la **vision cible complète** (Firebase, auth, audio, IA, etc.), pas encore implémentée.
+
+---
 
 ## Vision
 
