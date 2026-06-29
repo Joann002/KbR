@@ -85,16 +85,16 @@ assets/data/
 
 ### Persistance Hive
 - Box `kabary` (clé = id), box `ohabolana` (clé = id).
-- Box `favoris` stockant les ids favoris (kabary + ohabolana), via préfixe de type ou deux listes distinctes.
+- Box `favoris` avec **deux listes distinctes** : `favorisKabary` (ids) et `favorisOhabolana` (ids).
 - Box `meta` pour un flag `seeded` (déclenche le seed une seule fois).
-- Modèles annotés `@HiveType` ou stockés en map JSON ; choix tranché au plan d'implémentation.
+- **Stockage** : les modèles sont sérialisés en JSON (`Map`) via `json_serializable` et stockés tels quels dans Hive. Pas d'adaptateurs `@HiveType` / `hive_generator` (évite une couche de codegen supplémentaire).
 
 ### Seed
 Au 1er lancement, `core/data/seed_service` lit `assets/data/*.json`, désérialise et peuple les boxes Hive, puis positionne `meta.seeded = true`. Lectures ultérieures 100 % locales.
 
 ## 5. Navigation et écrans
 
-Bottom navigation à **3 onglets + Favoris = 4 onglets** :
+Bottom navigation à **4 onglets** :
 
 ```
 ┌────────┬──────────────┬───────────┬─────────┐
@@ -127,7 +127,7 @@ Typographies via `google_fonts` : **Playfair Display** (titres), **Noto Sans** (
 ## 7. Dépendances
 
 Sous-ensemble local du plan :
-`flutter_riverpod`, `riverpod_annotation` (+ `build_runner`, `riverpod_generator` en dev), `hive`, `hive_flutter` (+ `hive_generator` en dev si modèles annotés), `go_router`, `google_fonts`, `json_annotation` (+ `json_serializable` en dev), `uuid`, `share_plus`, `flutter_svg`.
+`flutter_riverpod`, `riverpod_annotation` (+ `build_runner`, `riverpod_generator` en dev), `hive`, `hive_flutter`, `go_router`, `google_fonts`, `json_annotation` (+ `json_serializable` en dev), `uuid`, `share_plus`, `flutter_svg`.
 
 **Exclus du MVP** : Firebase (tous), Algolia, just_audio / audio_waveforms, video_player / chewie, flutter_map / geolocator, dio, pdf.
 
